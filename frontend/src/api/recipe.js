@@ -135,19 +135,19 @@ export const recipeAPI = {
   },
 
   recipeImage(recipeSlug, version = null, key = null) {
-    return `/api/media/recipes/${recipeSlug}/images/original.webp?&rnd=${key}&version=${version}`;
+    return `./api/media/recipes/${recipeSlug}/images/original.webp?&rnd=${key}&version=${version}`;
   },
 
   recipeSmallImage(recipeSlug, version = null, key = null) {
-    return `/api/media/recipes/${recipeSlug}/images/min-original.webp?&rnd=${key}&version=${version}`;
+    return `./api/media/recipes/${recipeSlug}/images/min-original.webp?&rnd=${key}&version=${version}`;
   },
 
   recipeTinyImage(recipeSlug, version = null, key = null) {
-    return `/api/media/recipes/${recipeSlug}/images/tiny-original.webp?&rnd=${key}&version=${version}`;
+    return `./api/media/recipes/${recipeSlug}/images/tiny-original.webp?&rnd=${key}&version=${version}`;
   },
 
   recipeAssetPath(recipeSlug, assetName) {
-    return `/api/media/recipes/${recipeSlug}/assets/${assetName}`;
+    return `./api/media/recipes/${recipeSlug}/assets/${assetName}`;
   },
 
   /** Create comment in the Database

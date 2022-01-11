@@ -1,5 +1,5 @@
 // This Content is Auto Generated
-export const prefix = "/api";
+export const prefix = "./api";
 export const API_ROUTES = {
   aboutEvents: `${prefix}/about/events`,
   aboutEventsNotifications: `${prefix}/about/events/notifications`,
