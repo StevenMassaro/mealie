@@ -8,6 +8,7 @@
     <a :href="getImage(recipeDetails.slug)">
       <v-img
         :min-height="hideImage ? '50' : imageHeight"
+        :max-height="hideImage ? '50' : imageHeight"
         @error="hideImage = true"
         :src="getImage(recipeDetails.slug)"
         class="d-print-none"
