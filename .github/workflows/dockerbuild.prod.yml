@@ -1,8 +1,12 @@
 name: Docker Build Production
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - dev
+  pull_request:
+    branches:
+      - dev
 
 jobs:
   build:
@@ -44,5 +48,5 @@ jobs:
       - name: build the image
         run: |
           docker build --push \
-            --tag hkotel/mealie:latest \
+            --tag stevenmassaro/mealie:arm64 \
             --platform linux/amd64,linux/arm64 .
