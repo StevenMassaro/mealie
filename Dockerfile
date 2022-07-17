@@ -4,7 +4,7 @@
 FROM node:lts-alpine as frontend-build
 WORKDIR /app
 COPY ./frontend/package*.json ./
-RUN npm install
+RUN npm install --force
 COPY ./frontend/ .
 RUN npm run build
 
