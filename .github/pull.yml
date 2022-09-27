@@ -1,5 +1,0 @@
-version: "1"
-rules:
-  - base: dev
-    upstream: hay-kot:dev
-    mergeMethod: none
