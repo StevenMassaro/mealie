@@ -37,7 +37,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "html-webpack-plugin": "^5.3.1",
     "preload-webpack-plugin": "^2.3.0",
-    "sass": "^1.34.1",
+    "sass": "^1.56.0",
     "sass-loader": "^8.0.2",
     "typeface-roboto": "^1.1.13",
     "vue-cli-plugin-i18n": "~1.0.1",
