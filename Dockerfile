@@ -4,6 +4,7 @@
 FROM node:lts-alpine as frontend-build
 WORKDIR /app
 COPY ./frontend/package*.json ./
+ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN npm install --force
 COPY ./frontend/ .
 RUN npm run build
