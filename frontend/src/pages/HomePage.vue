@@ -37,6 +37,14 @@ export default {
     await this.$store.dispatch("requestRecentRecipes");
     await this.buildPage();
     this.recipeByCategory.sort((a, b) => a.position - b.position);
+    try {
+      await navigator.wakeLock.request("screen");
+      console.log("acquired wakelock")
+    } catch (err) {
+      // The Wake Lock request has failed - usually system related, such as battery.
+      console.log("failed to acquire wakelock");
+      console.error(err);
+    }
   },
   computed: {
     siteSettings() {
